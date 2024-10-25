@@ -1,0 +1,84 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-wrapper {
+  .aw__header-wrapper {
+    width: 60ch;
+    margin-inline: auto;
+    text-align: center;
+
+    p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+  }
+
+  .form-wrapper {
+    margin-top: 2rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30em;
+    padding: 1rem;
+    border: 1px solid #222;
+    border-radius: 0.66rem;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      input[type="file"] {
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.66rem;
+        background-color: #222;
+        color: #fff;
+      }
+    }
+  }
+
+  .download-link {
+    margin-top: 1rem;
+  }
+}
+
+.vocabulary-wrapper {
+  .table-wrapper {
+    margin-inline: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #222;
+
+    thead {
+      display: table-header-group;
+      justify-self: space-between;
+
+      th {
+        background-color: #222;
+        padding: 0.5rem;
+      }
+    }
+
+    tr {
+      border-bottom: 1px solid #222;
+      :hover {
+        background-color: #222;
+      }
+
+      td {
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+}
